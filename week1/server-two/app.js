@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const pug = require('pug');
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
@@ -13,4 +14,8 @@ app.get('/catinfo', (req, res) => {
         'weight': 5,
     };
     res.json(cat);
+});
+app.set('view engine', 'pug');
+app.get('/', function (req, res) {
+    res.render('index', { title: 'Hey', message: 'Hello there!' })
 });

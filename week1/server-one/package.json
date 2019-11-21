@@ -1,7 +1,6 @@
 {
   "name": "untitled",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
@@ -20,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/hexarules/backend/issues"
   },
-  "homepage": "https://github.com/hexarules/backend#readme"
+  "homepage": "https://github.com/hexarules/backend#readme",
+  "description": ""
 }
